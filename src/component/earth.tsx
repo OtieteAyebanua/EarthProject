@@ -1,4 +1,3 @@
-import { OrbitControls } from "@react-three/drei";
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
 import { useRef } from "react";
 import { TextureLoader } from "three";
@@ -17,7 +16,7 @@ const Earth = () => {
   return (
     <mesh ref={ref}>
       <sphereGeometry args={[1, 64, 64]} />
-      <meshPhongMaterial map={earthTexture} metalness={0.5} roughness={0.5} />
+      <meshPhongMaterial map={earthTexture}  />
       <pointLight intensity={10} />
       <directionalLight position={[5, 3, 5]} intensity={3} />
       <pointLight intensity={2} />
