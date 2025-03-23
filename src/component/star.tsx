@@ -42,14 +42,14 @@ export const Stars = ({ stars }: Props) => {
           new THREE.MeshStandardMaterial({
             color: "orange",
             emissive: "white",
-            emissiveIntensity: 2,
+            emissiveIntensity: 1,
             roughness: 0.4,
             metalness: 0.5,
           }),
           stars.length,
         ]}
       />
-
+     
       <EffectComposer>
         <Bloom luminanceThreshold={1} luminanceSmoothing={1} intensity={0.5} />
       </EffectComposer>

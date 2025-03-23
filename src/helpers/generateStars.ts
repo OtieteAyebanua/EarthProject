@@ -3,7 +3,7 @@ export const generateStarsInSphere = (count: number, radius: number) => {
     for (let i = 0; i < count; i++) {
       const theta = Math.random() * Math.PI * 2
       const phi = Math.acos(2 * Math.random() - 1)
-      const r = radius + Math.random() * 5 // optional: add slight variation
+      const r = radius + Math.random() * 5 
   
       const x = r * Math.sin(phi) * Math.cos(theta)
       const y = r * Math.sin(phi) * Math.sin(theta)
